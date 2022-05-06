@@ -31,3 +31,28 @@ This is the repository for the [SBST 2022 tutorial](https://sbst22.github.io/key
   ```
   This opens a browser window at http://localhost:8888/tree
 - Proceed to [x0_0_Prerequisites.ipynb](http://localhost:8888/notebooks/x0_0_Prerequisites.ipynb) and execute the page completely.
+
+## Stepping through the tutorial
+
+The jupyter notebooks in this tutorial are designed to be stepped through in an ordered sequence.
+For example, The first number `0` in `x0_3_HDD.ipynb` is the major number and `3` is the minor number.
+The major number describes the particular section being explained. These are:
+
+0. Prerequisites
+
+   These are well known external algorithms, and will not be explained during the tutorial.
+1. Generating Samples
+
+   How to generate valid samples for grammar mining when one does not have access to the input specification for parsers (e.g. JSON, Java syntax etc.).
+   
+2. Mining Grammar
+
+   How to mine the context-free grammar of a given parser
+   
+3. Abstracting Inputs
+
+   If you find a bug or an otherwise interesting behavior, how to abstract this input so that you can generate a much larger number of inputs all reproducing this behavior.
+   
+4. Input Algebras
+
+   If you find multiple such interesting beahviors, or bugs, how to combine them, using the full algebraic operations -- conjunction (and), disjunction (or), and negation (complement) so that each input contains all bugs you specify.
