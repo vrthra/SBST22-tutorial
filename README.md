@@ -2,6 +2,17 @@
 
 This is the repository for the [SBST 2022 tutorial](https://sbst22.github.io/keynotes/) on "Learning and Refining Input Grammars for Effective Fuzzing".
 
+The focus of this tutorial is to provide a suite of tools that can be used in conjunction with search based software engineering. In particular, we will see:
+
+1. How to generate inputs using GA when the syntax specification is not available
+2. How to use the sample inputs for mining the syntax specification (context-free grammar) of a given parser
+3. Given such a specification, how to abstract any input that causes a bug resulting in a bug specification
+4. How to combine the specifications of such bugs using *and*, *or* and *negate* for complex bug specifications. For example, one can specify that **each input** produced by a fuzzer should contain input patterns that induce bugs A, B, and either C or D but should not contain bug E.
+
+  That is:
+    
+    A & B & (C | D) \ E
+
 ## Prerequisites
 
 - Download [Python 3.10](https://www.python.org/downloads/)
@@ -56,3 +67,5 @@ The major number describes the particular section being explained. These are:
 4. Input Algebras
 
    If you find multiple such interesting beahviors, or bugs, how to combine them, using the full algebraic operations -- conjunction (and), disjunction (or), and negation (complement) so that each input contains all bugs you specify.
+
+The minor numbers specify the tasks that are involved in each major step.
