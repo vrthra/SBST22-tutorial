@@ -30,4 +30,4 @@ This is the repository for the [SBST 2022 tutorial](https://sbst22.github.io/key
   $ jupyter-notebook
   ```
   This opens a browser window at http://localhost:8888/tree
-- Proceed to [x0_Prerequisites](http://localhost:8888/notebooks/x0_0_Prerequisites.ipynb) and execute the page completely.
+- Proceed to [x0_0_Prerequisites.ipynb](http://localhost:8888/notebooks/x0_0_Prerequisites.ipynb) and execute the page completely.
