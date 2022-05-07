@@ -35,15 +35,21 @@ The focus of this tutorial is to provide a suite of tools that can be used in co
   ```
   $ sudo apt-get install python3.10
   ```
-- Install [Jupyter](https://jupyter.org/).
-  ```
-  $ pytho3 -m pip3 install jupyter
-  ```
 - Install [Graphviz](https://graphviz.org/download/) for your operating system.
   
   Some variation of
   ```
   $ sudo apt install graphviz
+  ```
+- Make a virtual environment (recommended)
+  ```
+  $ python3 -m venv sbst2022
+  $ cd sbt2022
+  $ source bin/activate
+  ```
+- Install [Jupyter](https://jupyter.org/).
+  ```
+  $ ./bin/python3 -m pip install jupyter jupytext
   ```
 - Checkout this repository
   ```
