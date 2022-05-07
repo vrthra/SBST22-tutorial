@@ -13,6 +13,20 @@ The focus of this tutorial is to provide a suite of tools that can be used in co
     
     A & B & (C | D) \ E
 
+**Note.** While the algorithms are presented in Python, the techniques presented are language agnostic. That is, you can apply these techniques and the implementation directly to any parser so long as the parser satisfies at least some of these criteria. Furthermore, any criteria that the targeted parser doesn't satisfy can easily be worked around with some (usually minimal) effort.
+
+1. For sections (1) (Generating samples without specification) we assume that the program under test is written in a language that
+   1. Allows some way to wrap the input string in a proxy object such that access to the input string can be tracked as long as it remains a string (i.e unparsed).
+   2. Failing which (i.e. C), we assume some taint tracking mechanism that allows us to identify the part of the input string we are operating on in any parsing unit.
+   3. If no such taint trackers are available, we assume that the parser processes input byte by byte and exits with an error as soon as an unparsable byte is found.
+
+2. For section (2), beyond the requirement from (1) we also assume that the parser
+   1. Uses functions/procedures/methods to organize various parsing units
+   2. Uses structured programming techniques such as loops and conditionals
+   3. Failing these (i.e. combinatorial parsers) the parsing units are labeled (i.e. the variable containing the parsing unit is adequately named), and these labels are recoverable somehow.
+
+3. Sections (3) and (4) does not impose any requirements on the parser.
+
 ## Prerequisites
 
 - Download [Python 3.10](https://www.python.org/downloads/)
