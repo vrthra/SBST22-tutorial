@@ -63,6 +63,9 @@ The focus of this tutorial is to provide a suite of tools that can be used in co
   This opens a browser window at http://localhost:8888/tree
 - Proceed to [x0_0_Prerequisites.ipynb](http://localhost:8888/notebooks/x0_0_Prerequisites.ipynb) and execute the page completely.
 
+- The [Roadmap.ipynb](http://localhost:8888/notebooks/Roadmap.ipynb) contains
+  the description of each notebook and links to each.
+
 ## Stepping through the tutorial
 
 The jupyter notebooks in this tutorial are designed to be stepped through in an ordered sequence.
