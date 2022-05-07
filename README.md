@@ -58,7 +58,7 @@ In particular, we will see:
   ```
 - Install [Jupyter](https://jupyter.org/).
   ```
-  $ ./bin/python3 -m pip install jupyter
+  $ ./bin/python3 -m pip install "jupyter==1.0.0"
   ```
 - Checkout this repository
   ```
